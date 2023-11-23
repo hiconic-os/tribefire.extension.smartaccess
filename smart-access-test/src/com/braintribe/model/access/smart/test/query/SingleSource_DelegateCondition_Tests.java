@@ -17,7 +17,6 @@ import com.braintribe.model.processing.query.smart.test.model.accessA.CompanyA;
 import com.braintribe.model.processing.query.smart.test.model.accessA.PersonA;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartAddress;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
-import com.braintribe.model.processing.smart.query.planner.SingleSource_DelegateCondition_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
@@ -25,7 +24,7 @@ import com.braintribe.model.query.SelectQuery;
  */
 public class SingleSource_DelegateCondition_Tests extends AbstractSmartQueryTests {
 
-	/** @see SingleSource_DelegateCondition_PlannerTests#simpleCondition() */
+	/** See SingleSource_DelegateCondition_PlannerTests#simpleCondition() */
 	@Test
 	public void simpleCondition() {
 		bA.address("st1").number(10).create();
@@ -46,7 +45,7 @@ public class SingleSource_DelegateCondition_Tests extends AbstractSmartQueryTest
 		assertNoMoreResults();
 	}
 
-	/** @see SingleSource_DelegateCondition_PlannerTests#simplePropertyPathCondition() */
+	/** See SingleSource_DelegateCondition_PlannerTests#simplePropertyPathCondition() */
 	@Test
 	public void simplePropertyPathCondition() {
 		PersonA bill = bA.personA("Bill").create();
@@ -100,7 +99,7 @@ public class SingleSource_DelegateCondition_Tests extends AbstractSmartQueryTest
 		assertNoMoreResults();
 	}
 
-	/** @see SingleSource_DelegateCondition_PlannerTests#disjunctionFulltextCondition() */
+	/** See SingleSource_DelegateCondition_PlannerTests#disjunctionFulltextCondition() */
 	@Test
 	public void disjunctionFulltextCondition() {
 		bA.personA("YesA").parentB("parentYesA").companyNameA("foobar llc").create();
@@ -131,7 +130,7 @@ public class SingleSource_DelegateCondition_Tests extends AbstractSmartQueryTest
 		assertNoMoreResults();
 	}
 
-	/** @see SingleSource_DelegateCondition_PlannerTests#simpleConjunction() */
+	/** See SingleSource_DelegateCondition_PlannerTests#simpleConjunction() */
 	@Test
 	public void simpleConjunction() {
 		bA.address("st1").number(15).create();
@@ -159,7 +158,7 @@ public class SingleSource_DelegateCondition_Tests extends AbstractSmartQueryTest
 		assertNoMoreResults();
 	}
 
-	/** @see SingleSource_DelegateCondition_PlannerTests#simpleDisjunction() */
+	/** See SingleSource_DelegateCondition_PlannerTests#simpleDisjunction() */
 	@Test
 	public void simpleDisjunction() {
 		bA.address("st1").number(9).create();
@@ -185,7 +184,7 @@ public class SingleSource_DelegateCondition_Tests extends AbstractSmartQueryTest
 		assertNoMoreResults();
 	}
 
-	/** @see SingleSource_DelegateCondition_PlannerTests#simpleNegation() */
+	/** See SingleSource_DelegateCondition_PlannerTests#simpleNegation() */
 	@Test
 	public void simpleNegation() {
 		bA.address("st1").zipCode("z55b").create();

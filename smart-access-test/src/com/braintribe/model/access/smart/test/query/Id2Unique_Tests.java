@@ -16,11 +16,10 @@ import org.junit.Test;
 import com.braintribe.model.processing.query.smart.test.model.accessA.Id2UniqueEntityA;
 import com.braintribe.model.processing.query.smart.test.model.smart.Id2UniqueEntity;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
-import com.braintribe.model.processing.smart.query.planner.Id2Unique_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
- * @see Id2Unique_PlannerTests
+ * See Id2Unique_PlannerTests
  */
 public class Id2Unique_Tests extends AbstractSmartQueryTests {
 

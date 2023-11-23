@@ -14,7 +14,6 @@ package com.braintribe.model.access.smart.test.query;
 import org.junit.Test;
 
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
-import com.braintribe.model.processing.smart.query.planner.CollectionSelection_Primitive_PlannerTests;
 import com.braintribe.model.query.JoinType;
 import com.braintribe.model.query.SelectQuery;
 
@@ -23,7 +22,7 @@ import com.braintribe.model.query.SelectQuery;
  */
 public class CollectionSelection_Primitive_Tests extends AbstractSmartQueryTests {
 
-	/** @see CollectionSelection_Primitive_PlannerTests#simpleSetQuery() */
+	/** See CollectionSelection_Primitive_PlannerTests#simpleSetQuery() */
 	@Test
 	public void simpleEmptySetQuery() {
 		bA.personA("p").create();
@@ -41,7 +40,7 @@ public class CollectionSelection_Primitive_Tests extends AbstractSmartQueryTests
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_Primitive_PlannerTests#simpleSetQuery() */
+	/** See CollectionSelection_Primitive_PlannerTests#simpleSetQuery() */
 	@Test
 	public void innerJoinEmptySetQuery() {
 		bA.personA("a").create();
@@ -60,7 +59,7 @@ public class CollectionSelection_Primitive_Tests extends AbstractSmartQueryTests
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_Primitive_PlannerTests#simpleSetQuery() */
+	/** See CollectionSelection_Primitive_PlannerTests#simpleSetQuery() */
 	@Test
 	public void simpleSetQuery() {
 		bA.personA("p").nickNamesA("p", "pp", "ppp").create();
@@ -120,7 +119,7 @@ public class CollectionSelection_Primitive_Tests extends AbstractSmartQueryTests
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_Primitive_PlannerTests#simpleListWithIndexQuery() */
+	/** See CollectionSelection_Primitive_PlannerTests#simpleListWithIndexQuery() */
 	@Test
 	public void simpleListWithIndexQuery() {
 		bA.personA("p").nickNamesA("p", "pp", "ppp").create();
@@ -146,7 +145,7 @@ public class CollectionSelection_Primitive_Tests extends AbstractSmartQueryTests
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_Primitive_PlannerTests#simpleMapWithKeyQuery() */
+	/** See CollectionSelection_Primitive_PlannerTests#simpleMapWithKeyQuery() */
 	@Test
 	public void simpleMapWithKeyQuery() {
 		bA.personA("p").nickNamesA("p", "pp", "ppp").create();

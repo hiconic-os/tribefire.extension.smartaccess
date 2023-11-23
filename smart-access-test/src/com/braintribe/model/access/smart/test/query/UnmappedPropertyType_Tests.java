@@ -18,15 +18,14 @@ import com.braintribe.model.processing.query.smart.test.model.accessA.special.Re
 import com.braintribe.model.processing.query.smart.test.model.accessB.special.BookB;
 import com.braintribe.model.processing.query.smart.test.model.smart.special.SmartBookB;
 import com.braintribe.model.processing.query.smart.test.model.smart.special.SmartReaderA;
-import com.braintribe.model.processing.smart.query.planner.UnmappedPropertyType_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
- * @see UnmappedPropertyType_PlannerTests
+ * See UnmappedPropertyType_PlannerTests
  */
 public class UnmappedPropertyType_Tests extends AbstractSmartQueryTests {
 
-	/** @see UnmappedPropertyType_PlannerTests#selectUnmappedTypeProperty() */
+	/** See UnmappedPropertyType_PlannerTests#selectUnmappedTypeProperty() */
 	@Test
 	public void selectUnmappedTypeProperty() {
 		BookB b = bB.bookB("bb").create();
@@ -45,7 +44,7 @@ public class UnmappedPropertyType_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see UnmappedPropertyType_PlannerTests#selectUnmappedTypeProperty_Set() */
+	/** See UnmappedPropertyType_PlannerTests#selectUnmappedTypeProperty_Set() */
 	@Test
 	public void selectUnmappedTypeProperty_Set() {
 		BookB b1 = bB.bookB("bb1").create();
@@ -66,7 +65,7 @@ public class UnmappedPropertyType_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see UnmappedPropertyType_PlannerTests#selectUnmappedTypePropertyWithSignatureCondition() */
+	/** See UnmappedPropertyType_PlannerTests#selectUnmappedTypePropertyWithSignatureCondition() */
 	@Test
 	public void selectUnmappedTypePropertyWithSignatureCondition() {
 		BookB b = bB.bookB("bb").create();
@@ -87,7 +86,7 @@ public class UnmappedPropertyType_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see UnmappedPropertyType_PlannerTests#selectUnmappedTypePropertyWithEntityCondition() */
+	/** See UnmappedPropertyType_PlannerTests#selectUnmappedTypePropertyWithEntityCondition() */
 	@Test
 	public void selectUnmappedTypePropertyWithEntityCondition() {
 		BookB b = bB.bookB("bb").create();
@@ -110,7 +109,7 @@ public class UnmappedPropertyType_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see UnmappedPropertyType_PlannerTests#selectAsIsMappedPropertyAndNotSmartReferenceUseCase() */
+	/** See UnmappedPropertyType_PlannerTests#selectAsIsMappedPropertyAndNotSmartReferenceUseCase() */
 	@Test
 	public void selectAsIsMappedPropertyAndNotSmartReferenceUseCase() {
 		ManualA m = bA.manualA("m").create();

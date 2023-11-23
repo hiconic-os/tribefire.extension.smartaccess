@@ -20,7 +20,6 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.braintribe.model.processing.query.eval.set.OrderedSetRefinementTests;
 import com.braintribe.model.processing.query.smart.eval.set.base.AbstractSmartEvalTupleSetTests;
 import com.braintribe.model.processing.query.smart.test.model.accessA.PersonA;
 import com.braintribe.model.query.SelectQuery;
@@ -33,7 +32,7 @@ import com.braintribe.model.smartqueryplan.set.DelegateQuerySet;
  * Originally, the {@link OrderedSetRefinement} was implemented in smart access for a specific use-case (under the name ExtendedOrderedSet). Now it
  * was moved to the basic query evaluator, but I keep this tests for extra safety.
  * 
- * @see OrderedSetRefinementTests
+ * See OrderedSetRefinementTests (query-plan-evaluator-test)
  */
 public class SmartOrderedSetRefinementTest extends AbstractSmartEvalTupleSetTests {
 

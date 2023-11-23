@@ -16,15 +16,14 @@ import org.junit.Test;
 import com.braintribe.model.processing.query.smart.test.model.accessA.CompositeKpaEntityA;
 import com.braintribe.model.processing.query.smart.test.model.accessA.PersonA;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
-import com.braintribe.model.processing.smart.query.planner.EntitySelection_CompositeKpa_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
- * @see EntitySelection_CompositeKpa_PlannerTests
+ * See EntitySelection_CompositeKpa_PlannerTests
  */
 public class EntitySelection_CompositeKpa_Tests extends AbstractSmartQueryTests {
 
-	/** @see EntitySelection_CompositeKpa_PlannerTests#selectCompositeKpaEntity() */
+	/** See EntitySelection_CompositeKpa_PlannerTests#selectCompositeKpaEntity() */
 	@Test
 	public void selectCompositeKpaEntity() {
 		PersonA p1 = bA.personA("p1").compositeId(1L).compositeName("pp1").compositeCompanyName("c1").create();
@@ -51,7 +50,7 @@ public class EntitySelection_CompositeKpa_Tests extends AbstractSmartQueryTests 
 		assertNoMoreResults();
 	}
 
-	/** @see EntitySelection_CompositeKpa_PlannerTests#conditionOnCompositeKpaEntity_ExternalDqj() */
+	/** See EntitySelection_CompositeKpa_PlannerTests#conditionOnCompositeKpaEntity_ExternalDqj() */
 	@Test
 	public void conditionOnCompositeKpaEntity() {
 		PersonA p1 = bA.personA("p1").compositeId(1L).compositeName("pp1").compositeCompanyName("c1").create();

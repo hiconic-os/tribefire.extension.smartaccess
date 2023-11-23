@@ -23,7 +23,6 @@ import com.braintribe.model.processing.query.smart.test.model.accessB.special.Bo
 import com.braintribe.model.processing.query.smart.test.model.smart.Car;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
 import com.braintribe.model.processing.query.smart.test.model.smart.special.SmartPublication;
-import com.braintribe.model.processing.smart.query.planner.OrderBy_PlannerTests;
 import com.braintribe.model.query.EntityQuery;
 import com.braintribe.model.query.SelectQuery;
 import com.braintribe.model.query.smart.processing.eval.set.EvalOrderedConcatenation;
@@ -34,7 +33,7 @@ import com.braintribe.model.queryplan.set.PaginatedSet;
  */
 public class OrderBy_Tests extends AbstractSmartQueryTests {
 
-	/** @see OrderBy_PlannerTests#defaultSort() */
+	/** See OrderBy_PlannerTests#defaultSort() */
 	@Test
 	public void defaultSort() {
 		PersonA p1 = bA.personA("aa").create();
@@ -57,7 +56,7 @@ public class OrderBy_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see OrderBy_PlannerTests#defaultSort() */
+	/** See OrderBy_PlannerTests#defaultSort() */
 	@Test
 	public void compoundSortEntity() {
 		CompanyA c1 = bA.company("c_aa").create();
@@ -83,7 +82,7 @@ public class OrderBy_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see OrderBy_PlannerTests#defaultSort_WithDqj() */
+	/** See OrderBy_PlannerTests#defaultSort_WithDqj() */
 	@Test
 	public void defaultSort_WithDqj() {
 		PersonA p1 = bA.personA("aa").companyNameA("cA").create();
@@ -109,7 +108,7 @@ public class OrderBy_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see OrderBy_PlannerTests#defaultSort_NotFullyDelegatable() */
+	/** See OrderBy_PlannerTests#defaultSort_NotFullyDelegatable() */
 	@Test
 	public void defaultSort_NotFullyDelegatable() {
 		PersonA pa1 = bA.personA("aa1").companyNameA("cA").create();
@@ -139,7 +138,7 @@ public class OrderBy_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see OrderBy_PlannerTests#simpleSortByNonSelectedProperty() */
+	/** See OrderBy_PlannerTests#simpleSortByNonSelectedProperty() */
 	@Test
 	public void simpleSortByNonSelectedProperty() {
 		bA.personA("aa").companyNameA("c1").create();
@@ -162,7 +161,7 @@ public class OrderBy_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see OrderBy_PlannerTests#simpleSortByNonSelectedProperty_WithDqj() */
+	/** See OrderBy_PlannerTests#simpleSortByNonSelectedProperty_WithDqj() */
 	@Test
 	public void simpleSortByNonSelectedProperty_WithDqj() {
 		bA.personA("aa").companyNameA("cA").create();
@@ -191,7 +190,7 @@ public class OrderBy_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see OrderBy_PlannerTests#orderByWithPagination() */
+	/** See OrderBy_PlannerTests#orderByWithPagination() */
 	@SuppressWarnings("unused")
 	@Test
 	public void orderByWithPagination() {
@@ -265,7 +264,7 @@ public class OrderBy_Tests extends AbstractSmartQueryTests {
 		assertHasMoreFlag(true);
 	}
 
-	/** @see OrderBy_PlannerTests#paginationWhenSelectingPolymorphicEntity() */
+	/** See OrderBy_PlannerTests#paginationWhenSelectingPolymorphicEntity() */
 	@Test
 	public void paginationWhenSelectingPolymorphicEntity() {
 		CarA c1;

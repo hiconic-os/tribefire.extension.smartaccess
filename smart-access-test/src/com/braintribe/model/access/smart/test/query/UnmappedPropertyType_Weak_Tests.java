@@ -17,16 +17,14 @@ import com.braintribe.model.processing.query.smart.test.model.accessA.special.Ma
 import com.braintribe.model.processing.query.smart.test.model.accessA.special.ReaderA;
 import com.braintribe.model.processing.query.smart.test.model.smart.special.SmartManualA;
 import com.braintribe.model.processing.query.smart.test.model.smart.special.SmartReaderA;
-import com.braintribe.model.processing.smart.query.planner.UnmappedPropertyType_PlannerTests;
-import com.braintribe.model.processing.smart.query.planner.UnmappedPropertyType_Weak_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
- * @see UnmappedPropertyType_PlannerTests
+ * See UnmappedPropertyType_PlannerTests
  */
 public class UnmappedPropertyType_Weak_Tests extends AbstractSmartQueryTests {
 
-	/** @see UnmappedPropertyType_Weak_PlannerTests#selectUnmappedTypeProperty_Weak() */
+	/** See UnmappedPropertyType_Weak_PlannerTests#selectUnmappedTypeProperty_Weak() */
 	@Test
 	public void selectUnmappedTypeProperty_Weak() {
 		ManualA a = bA.manualA("ma").create();
@@ -45,7 +43,7 @@ public class UnmappedPropertyType_Weak_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 	                                           
-	/** @see UnmappedPropertyType_Weak_PlannerTests#selectUnmappedTypeProperty_Weak_Set() */
+	/** See UnmappedPropertyType_Weak_PlannerTests#selectUnmappedTypeProperty_Weak_Set() */
 	@Test
 	@SuppressWarnings("unused")
 	public void selectUnmappedTypeProperty_Weak_Set() {
@@ -90,7 +88,7 @@ public class UnmappedPropertyType_Weak_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 	
-	/** @see UnmappedPropertyType_Weak_PlannerTests#selectUnmappedTypePropertyWithEntityCondition_Weak() */
+	/** See UnmappedPropertyType_Weak_PlannerTests#selectUnmappedTypePropertyWithEntityCondition_Weak() */
 	@Test
 	public void selectUnmappedTypePropertyWithEntityCondition_Weak() {
 		ManualA a = bA.manualA("ma").create();

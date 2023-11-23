@@ -28,7 +28,6 @@ import com.braintribe.model.processing.query.smart.test.model.smart.FlyingCar;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartAddress;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
 import com.braintribe.model.processing.query.smart.test.model.smart.special.SmartReaderA;
-import com.braintribe.model.processing.smart.query.planner.EntitySelection_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 import com.braintribe.testing.category.KnownIssue;
 import com.braintribe.utils.junit.assertions.BtAssertions;
@@ -38,7 +37,7 @@ import com.braintribe.utils.junit.assertions.BtAssertions;
  */
 public class EntitySelect_Tests extends AbstractSmartQueryTests {
 
-	/** @see EntitySelection_PlannerTests#selectSimpleEntity() */
+	/** See EntitySelection_PlannerTests#selectSimpleEntity() */
 	@Test
 	public void selectSimpleEntity() {
 		Address a1 = bA.address("street1").create();
@@ -61,7 +60,7 @@ public class EntitySelect_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see EntitySelection_PlannerTests#selectPolymorphicEntity() */
+	/** See EntitySelection_PlannerTests#selectPolymorphicEntity() */
 	@Test
 	public void selectPolymorphicEntity() {
 		CarA c1 = bA.carA("car-1").create();
@@ -107,7 +106,7 @@ public class EntitySelect_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see EntitySelection_PlannerTests#directEntityCondition_selectIkpaProperty() */
+	/** See EntitySelection_PlannerTests#directEntityCondition_selectIkpaProperty() */
 	@Test
 	public void directEntityCondition_selectIkpaProperty() {
 		PersonA p1 = bA.personA("p1").create();
@@ -132,7 +131,7 @@ public class EntitySelect_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see EntitySelection_PlannerTests#directEntityCondition_selectIkpaProperty_disjunction() */
+	/** See EntitySelection_PlannerTests#directEntityCondition_selectIkpaProperty_disjunction() */
 	@SuppressWarnings("unused")
 	@Test
 	public void directEntityCondition_selectIkpaProperty_disjunction() {
@@ -163,7 +162,7 @@ public class EntitySelect_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see EntitySelection_PlannerTests#propertyEntityCondition_In() */
+	/** See EntitySelection_PlannerTests#propertyEntityCondition_In() */
 	@Test
 	public void propertyEntityCondition_In() {
 		CompanyA c1 = bA.company("c1").create();

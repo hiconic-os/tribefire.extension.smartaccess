@@ -25,12 +25,11 @@ import com.braintribe.model.processing.query.smart.test.model.accessB.StandardId
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonB;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartStringIdEntity;
 import com.braintribe.model.processing.query.smart.test.setup.base.SmartMappingSetup;
-import com.braintribe.model.processing.smart.query.planner.PropertyConversion_PlannerTests;
 import com.braintribe.model.query.JoinType;
 import com.braintribe.model.query.SelectQuery;
 
 /**
- * @see PropertyConversion_PlannerTests
+ * See PropertyConversion_PlannerTests
  */
 public class PropertyConversion_Tests extends AbstractSmartQueryTests {
 
@@ -42,7 +41,7 @@ public class PropertyConversion_Tests extends AbstractSmartQueryTests {
 	// ## . . . . . Simple Property . . . . . ##
 	// #########################################
 
-	/** @see PropertyConversion_PlannerTests#selectConvertedProperty() */
+	/** See PropertyConversion_PlannerTests#selectConvertedProperty() */
 	@Test
 	public void selectConvertedProperty() {
 		Date d1 = new Date(10 * YEAR_IN_MILLIS);
@@ -94,7 +93,7 @@ public class PropertyConversion_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see PropertyConversion_PlannerTests#filterByConvertedProperty_Equals() */
+	/** See PropertyConversion_PlannerTests#filterByConvertedProperty_Equals() */
 	@Test
 	public void filterByConvertedProperty_Equals() {
 		Date d1 = new Date(10 * YEAR_IN_MILLIS);
@@ -121,7 +120,7 @@ public class PropertyConversion_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see PropertyConversion_PlannerTests#filterByConvertedProperty_Inequality_NonDelegatable() */
+	/** See PropertyConversion_PlannerTests#filterByConvertedProperty_Inequality_NonDelegatable() */
 	@SuppressWarnings("unused")
 	@Test
 	public void filterByConvertedProperty_Inequality_NonDelegatable() {
@@ -153,7 +152,7 @@ public class PropertyConversion_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see PropertyConversion_PlannerTests#filterByConvertedProperty_In() */
+	/** See PropertyConversion_PlannerTests#filterByConvertedProperty_In() */
 	@Test
 	public void filterByConvertedProperty_In() {
 		Date d1 = new Date(10 * YEAR_IN_MILLIS);
@@ -180,7 +179,7 @@ public class PropertyConversion_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see PropertyConversion_PlannerTests#delegateWhenConvertedToSmartString_Like() */
+	/** See PropertyConversion_PlannerTests#delegateWhenConvertedToSmartString_Like() */
 	@SuppressWarnings("unused")
 	@Test
 	public void delegateWhenConvertedToSmartString_Like() {
@@ -209,7 +208,7 @@ public class PropertyConversion_Tests extends AbstractSmartQueryTests {
 	// ## . . . . . . KPA Property . . . . . .##
 	// #########################################
 
-	/** @see PropertyConversion_PlannerTests#selectConvertedProperty_Kpa() */
+	/** See PropertyConversion_PlannerTests#selectConvertedProperty_Kpa() */
 	@Test
 	public void selectConvertedProperty_Kpa() {
 		PersonA pA1 = bA.personA("pA1").create();
@@ -237,7 +236,7 @@ public class PropertyConversion_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see PropertyConversion_PlannerTests#selectConvertedProperty_Kpa_Left() */
+	/** See PropertyConversion_PlannerTests#selectConvertedProperty_Kpa_Left() */
 	@Test
 	public void selectConvertedProperty_Kpa_Left() {
 		PersonA pA1 = bA.personA("pA1").create();
@@ -268,7 +267,7 @@ public class PropertyConversion_Tests extends AbstractSmartQueryTests {
 	// ## . . . . Collection Property . . . . ##
 	// #########################################
 
-	/** @see PropertyConversion_PlannerTests#selectConvertedCollectionProperty() */
+	/** See PropertyConversion_PlannerTests#selectConvertedCollectionProperty() */
 	@Test
 	public void selectConvertedCollectionProperty() {
 		Date d1 = new Date(10L * YEAR_IN_MILLIS);
@@ -293,7 +292,7 @@ public class PropertyConversion_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see PropertyConversion_PlannerTests#filterByConvertedCollectionProperty() */
+	/** See PropertyConversion_PlannerTests#filterByConvertedCollectionProperty() */
 	@Test
 	public void filterByConvertedCollectionProperty() {
 		Date d1 = new Date(10L * YEAR_IN_MILLIS);
@@ -321,7 +320,7 @@ public class PropertyConversion_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see PropertyConversion_PlannerTests#filterByConvertedCollectionProperty_Inequality_NonDelegatable() */
+	/** See PropertyConversion_PlannerTests#filterByConvertedCollectionProperty_Inequality_NonDelegatable() */
 	@SuppressWarnings("unused")
 	@Test
 	public void filterByConvertedCollectionProperty_Inequality_NonDelegatable() {
@@ -358,7 +357,7 @@ public class PropertyConversion_Tests extends AbstractSmartQueryTests {
 	// ## . . . . IdProperty Property . . . . ##
 	// #########################################
 
-	/** @see PropertyConversion_PlannerTests#entityPropertyComparison() */
+	/** See PropertyConversion_PlannerTests#entityPropertyComparison() */
 	@SuppressWarnings("unused")
 	@Test
 	public void entityPropertyComparison() {
@@ -384,7 +383,7 @@ public class PropertyConversion_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see PropertyConversion_PlannerTests#entityCollection_InCondition() */
+	/** See PropertyConversion_PlannerTests#entityCollection_InCondition() */
 	@Test
 	public void entityCollection_InCondition() {
 		StandardIdEntity c11 = bB.standardIdEntity("c11").create();

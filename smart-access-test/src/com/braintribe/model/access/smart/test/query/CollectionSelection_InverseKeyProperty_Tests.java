@@ -19,7 +19,6 @@ import com.braintribe.model.processing.query.smart.test.model.accessB.ItemB;
 import com.braintribe.model.processing.query.smart.test.model.smart.CompositeIkpaEntity;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartItem;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
-import com.braintribe.model.processing.smart.query.planner.CollectionSelection_InverseKeyProperty_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
@@ -31,7 +30,7 @@ public class CollectionSelection_InverseKeyProperty_Tests extends AbstractSmartQ
 	// ## . . . . . Delegate -> Simple ; Smart -> Set<GenericEntity> . . . . . ##
 	// ##########################################################################
 
-	/** @see CollectionSelection_InverseKeyProperty_PlannerTests#simpleSetQuery() */
+	/** See CollectionSelection_InverseKeyProperty_PlannerTests#simpleSetQuery() */
 	@Test
 	public void simpleSetQuery() {
 		PersonA p1 = bA.personA("person1").create();
@@ -57,7 +56,7 @@ public class CollectionSelection_InverseKeyProperty_Tests extends AbstractSmartQ
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_InverseKeyProperty_PlannerTests#simpleSetQuery_Composite() */
+	/** See CollectionSelection_InverseKeyProperty_PlannerTests#simpleSetQuery_Composite() */
 	@Test
 	public void simpleSetQuery_Composite() {
 		PersonA p1 = bA.personA("person1").create();
@@ -83,7 +82,7 @@ public class CollectionSelection_InverseKeyProperty_Tests extends AbstractSmartQ
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_InverseKeyProperty_PlannerTests#simpleSetQuery_Composite_ExternalDqj() */
+	/** See CollectionSelection_InverseKeyProperty_PlannerTests#simpleSetQuery_Composite_ExternalDqj() */
 	@Test
 	public void simpleSetQuery_Composite_ExternalDqj() {
 		PersonA p1 = bA.personA("person1").create();
@@ -109,7 +108,7 @@ public class CollectionSelection_InverseKeyProperty_Tests extends AbstractSmartQ
 		assertNoMoreResults();
 	}
 	
-	/** @see CollectionSelection_InverseKeyProperty_PlannerTests#queryWithSetCondition() */
+	/** See CollectionSelection_InverseKeyProperty_PlannerTests#queryWithSetCondition() */
 	@Test
 	public void queryWithSetCondition() {
 		PersonA p;
@@ -139,7 +138,7 @@ public class CollectionSelection_InverseKeyProperty_Tests extends AbstractSmartQ
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_InverseKeyProperty_PlannerTests#queryWithSetCondition_Composite() */
+	/** See CollectionSelection_InverseKeyProperty_PlannerTests#queryWithSetCondition_Composite() */
 	@Test
 	public void queryWithSetCondition_Composite() {
 		PersonA p1 = bA.personA("person1").create();
@@ -169,7 +168,7 @@ public class CollectionSelection_InverseKeyProperty_Tests extends AbstractSmartQ
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_InverseKeyProperty_PlannerTests#queryWithSetCondition_Composite_ExternalDqj() */
+	/** See CollectionSelection_InverseKeyProperty_PlannerTests#queryWithSetCondition_Composite_ExternalDqj() */
 	@Test
 	public void queryWithSetCondition_Composite_ExternalDqj() {
 		PersonA p1 = bA.personA("person1").create();
@@ -199,7 +198,7 @@ public class CollectionSelection_InverseKeyProperty_Tests extends AbstractSmartQ
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_InverseKeyProperty_PlannerTests#setQueryWithSetCondition() */
+	/** See CollectionSelection_InverseKeyProperty_PlannerTests#setQueryWithSetCondition() */
 	@Test
 	@SuppressWarnings("unused")
 	public void setQueryWithSetCondition() {
@@ -237,7 +236,7 @@ public class CollectionSelection_InverseKeyProperty_Tests extends AbstractSmartQ
 	// ## . . . . . Delegate -> Set<Simple> ; Smart -> GenericEntity . . . . . ##
 	// ##########################################################################
 
-	/** @see CollectionSelection_InverseKeyProperty_PlannerTests#simpleEntityQuery() */
+	/** See CollectionSelection_InverseKeyProperty_PlannerTests#simpleEntityQuery() */
 	@Test
 	public void simpleEntityQuery() {
 		bA.personA("person1").create();
@@ -265,7 +264,7 @@ public class CollectionSelection_InverseKeyProperty_Tests extends AbstractSmartQ
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_InverseKeyProperty_PlannerTests#queryWithEntityCondition() */
+	/** See CollectionSelection_InverseKeyProperty_PlannerTests#queryWithEntityCondition() */
 	@SuppressWarnings("unused")
 	@Test
 	public void queryWithEntityCondition() {
@@ -298,7 +297,7 @@ public class CollectionSelection_InverseKeyProperty_Tests extends AbstractSmartQ
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_InverseKeyProperty_PlannerTests#queryWithEntityCondition_AndSelectingInverseKeyProperty() */
+	/** See CollectionSelection_InverseKeyProperty_PlannerTests#queryWithEntityCondition_AndSelectingInverseKeyProperty() */
 	@SuppressWarnings("unused")
 	@Test
 	public void queryWithEntityCondition_AndSelectingInverseKeyProperty() {
@@ -336,7 +335,7 @@ public class CollectionSelection_InverseKeyProperty_Tests extends AbstractSmartQ
 	// ## . . . . Delegate -> Set<Simple> ; Smart -> Set<GenericEntity> . . . .##
 	// ##########################################################################
 
-	/** @see CollectionSelection_InverseKeyProperty_PlannerTests#simpleInverseSetQuery() */
+	/** See CollectionSelection_InverseKeyProperty_PlannerTests#simpleInverseSetQuery() */
 	@Test
 	public void simpleInverseSetQuery() {
 		PersonA p1 = bA.personA("person1").create();
@@ -373,7 +372,7 @@ public class CollectionSelection_InverseKeyProperty_Tests extends AbstractSmartQ
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_InverseKeyProperty_PlannerTests#queryWithInverseSetCondition() */
+	/** See CollectionSelection_InverseKeyProperty_PlannerTests#queryWithInverseSetCondition() */
 	@SuppressWarnings("unused")
 	@Test
 	public void queryWithInverseSetCondition() {
@@ -405,7 +404,7 @@ public class CollectionSelection_InverseKeyProperty_Tests extends AbstractSmartQ
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_InverseKeyProperty_PlannerTests#inverseSetQueryWithInverseSetCondition() */
+	/** See CollectionSelection_InverseKeyProperty_PlannerTests#inverseSetQueryWithInverseSetCondition() */
 	@SuppressWarnings("unused")
 	@Test
 	public void inverseSetQueryWithInverseSetCondition() {

@@ -19,7 +19,6 @@ import com.braintribe.model.processing.query.smart.test.model.smart.ItemType;
 import com.braintribe.model.processing.query.smart.test.model.smart.ItemType_Identity;
 import com.braintribe.model.processing.query.smart.test.model.smart.ItemType_String;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartEnumEntityB;
-import com.braintribe.model.processing.smart.query.planner.EnumEntitySelection_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
@@ -27,7 +26,7 @@ import com.braintribe.model.query.SelectQuery;
  */
 public class EnumEntitySelect_Tests extends AbstractSmartQueryTests {
 
-	/** @see EnumEntitySelection_PlannerTests#enumSelection_Identity */
+	/** See EnumEntitySelection_PlannerTests#enumSelection_Identity */
 	@Test
 	public void enumSelection_Identity() {
 		bB.enumEntityB("e1").enumIdentity(ItemType_Identity.MAGIC).create();
@@ -112,7 +111,7 @@ public class EnumEntitySelect_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see EnumEntitySelection_PlannerTests#enumSelection_StringConversion */
+	/** See EnumEntitySelection_PlannerTests#enumSelection_StringConversion */
 	@Test
 	public void enumSelection_StringConversion() {
 		bB.enumEntityB("e1").enumAsString("MAGIC_B").create();
@@ -132,7 +131,7 @@ public class EnumEntitySelect_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see EnumEntitySelection_PlannerTests#enumSelection_CustomConversion() */
+	/** See EnumEntitySelection_PlannerTests#enumSelection_CustomConversion() */
 	@Test
 	public void enumSelection_CustomConversion() {
 		bB.enumEntityB("e1").enumCustomConverted(ItemType.MAGIC.ordinal()).create();
@@ -152,7 +151,7 @@ public class EnumEntitySelect_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see EnumEntitySelection_PlannerTests#enumSelection_StringConversion_Set */
+	/** See EnumEntitySelection_PlannerTests#enumSelection_StringConversion_Set */
 	@Test
 	public void enumSelection_StringConversion_Set() {
 		bB.enumEntityB("e1").enumAsStringSet("MAGIC_B", "TOOL_B").create();
@@ -171,7 +170,7 @@ public class EnumEntitySelect_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see EnumEntitySelection_PlannerTests#enumSelection_StringConversion_MapValue */
+	/** See EnumEntitySelection_PlannerTests#enumSelection_StringConversion_MapValue */
 	@Test
 	public void enumSelection_StringConversion_MapValue() {
 		bB.enumEntityB("e1").enumAsStringMap("COSMETICS_B", "MAGIC_B", "OTHER_B", "TOOL_B").create();
@@ -190,7 +189,7 @@ public class EnumEntitySelect_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see EnumEntitySelection_PlannerTests#enumSelection_StringConversion_MapKey */
+	/** See EnumEntitySelection_PlannerTests#enumSelection_StringConversion_MapKey */
 	@Test
 	public void enumSelection_StringConversion_MapKey() {
 		bB.enumEntityB("e1").enumAsStringMap("COSMETICS_B", "MAGIC_B", "OTHER_B", "TOOL_B").create();
@@ -210,7 +209,7 @@ public class EnumEntitySelect_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see EnumEntitySelection_PlannerTests#enumSelection_StringConversion_MapKey_WhereValueIsEntity */
+	/** See EnumEntitySelection_PlannerTests#enumSelection_StringConversion_MapKey_WhereValueIsEntity */
 	@Test
 	public void enumSelection_StringConversion_MapKey_WhereValueIsEntity() {
 		bB.enumEntityB("e1").enumAsStringMapKey("COSMETICS_B", null, "OTHER_B", null).create();
@@ -230,7 +229,7 @@ public class EnumEntitySelect_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see EnumEntitySelection_PlannerTests#enumSelection_Delegate_MapValue */
+	/** See EnumEntitySelection_PlannerTests#enumSelection_Delegate_MapValue */
 	@Test
 	public void enumSelection_Delegate_MapValue() {
 		bB.enumEntityB("e1").enumAsDelegateMap(ItemTypeB.COSMETICS_B, ItemTypeB.MAGIC_B, ItemTypeB.OTHER_B, ItemTypeB.TOOL_B).create();
@@ -249,7 +248,7 @@ public class EnumEntitySelect_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see EnumEntitySelection_PlannerTests#enumSelection_Delegate_MapKey */
+	/** See EnumEntitySelection_PlannerTests#enumSelection_Delegate_MapKey */
 	@Test
 	public void enumSelection_Delegate_MapKey() {
 		bB.enumEntityB("e1").enumAsDelegateMap(ItemTypeB.COSMETICS_B, ItemTypeB.MAGIC_B, ItemTypeB.OTHER_B, ItemTypeB.TOOL_B).create();
@@ -269,7 +268,7 @@ public class EnumEntitySelect_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see EnumEntitySelection_PlannerTests#enumSelection_Delegate_MapKey_WhereValueIsEntity */
+	/** See EnumEntitySelection_PlannerTests#enumSelection_Delegate_MapKey_WhereValueIsEntity */
 	@Test
 	public void enumSelection_Delegate_MapKey_WhereValueIsEntity() {
 		bB.enumEntityB("e1").enumAsDelegateMapKey(ItemTypeB.COSMETICS_B, null, ItemTypeB.OTHER_B, null).create();

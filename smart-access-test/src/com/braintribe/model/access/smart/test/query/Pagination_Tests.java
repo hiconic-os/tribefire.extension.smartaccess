@@ -21,7 +21,6 @@ import org.junit.Test;
 import com.braintribe.model.processing.query.smart.test.model.accessB.PersonB;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonB;
-import com.braintribe.model.processing.smart.query.planner.Pagination_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
@@ -33,7 +32,7 @@ public class Pagination_Tests extends AbstractSmartQueryTests {
 	// ## . . . . . Plain Sorting . . . . . ##
 	// #######################################
 
-	/** @see Pagination_PlannerTests#bulksDueToPagination() */
+	/** See Pagination_PlannerTests#bulksDueToPagination() */
 	@Test
 	public void bulksDueToPagination() {
 		bA.personA("p").companyNameA("cA").create();
@@ -60,7 +59,7 @@ public class Pagination_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see Pagination_PlannerTests#bulksDueToPagination_WithSimpleCollection() */
+	/** See Pagination_PlannerTests#bulksDueToPagination_WithSimpleCollection() */
 	@Test
 	public void bulksDueToPagination_WithSimpleCollection() {
 		bA.personA("p").nickNamesA("n", "n").companyNameA("cA").create();
@@ -90,7 +89,7 @@ public class Pagination_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see Pagination_PlannerTests#bulksDueToPagination_WhenConditions() */
+	/** See Pagination_PlannerTests#bulksDueToPagination_WhenConditions() */
 	@Test
 	public void bulksDueToPagination_WhenConditions() {
 		bA.personA("p").companyNameA("cA").create();
@@ -122,7 +121,7 @@ public class Pagination_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see Pagination_PlannerTests#bulksDueToPagination_WhenOrdered() */
+	/** See Pagination_PlannerTests#bulksDueToPagination_WhenOrdered() */
 	@Test
 	public void bulksDueToPagination_WhenOrdered() {
 		bA.personA("p1").companyNameA("cA").create();
@@ -150,7 +149,7 @@ public class Pagination_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see Pagination_PlannerTests#noBulksDueToTheNeedOfBeingSorted() */
+	/** See Pagination_PlannerTests#noBulksDueToTheNeedOfBeingSorted() */
 	@Test
 	public void noBulksDueToTheNeedOfBeingSorted() {
 		bA.personA("p1").companyNameA("cA").create();
@@ -180,7 +179,7 @@ public class Pagination_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see Pagination_PlannerTests#bulksDueToNonDelegatableCondition() */
+	/** See Pagination_PlannerTests#bulksDueToNonDelegatableCondition() */
 	@SuppressWarnings("unused")
 	@Test
 	public void bulksDueToNonDelegatableCondition() {

@@ -17,7 +17,6 @@ import org.junit.experimental.categories.Category;
 import com.braintribe.model.processing.query.smart.test.model.accessA.CompanyA;
 import com.braintribe.model.processing.query.smart.test.model.smart.Company;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
-import com.braintribe.model.processing.smart.query.planner.CollectionSelection_KeyProperty_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 import com.braintribe.testing.category.KnownIssue;
 
@@ -26,7 +25,7 @@ import com.braintribe.testing.category.KnownIssue;
  */
 public class CollectionSelection_KeyProperty_Tests extends AbstractSmartQueryTests {
 
-	/** @see CollectionSelection_KeyProperty_PlannerTests#EXPECTED_TO_FAIL_simpleSetQuery() */
+	/** See CollectionSelection_KeyProperty_PlannerTests#EXPECTED_TO_FAIL_simpleSetQuery() */
 	@Test
 	@Category(KnownIssue.class)
 	public void EXPECTED_TO_FAIL_simpleSetQuery() {
@@ -52,7 +51,7 @@ public class CollectionSelection_KeyProperty_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_KeyProperty_PlannerTests#simpleSetQuery_ExternalDqj() */
+	/** See CollectionSelection_KeyProperty_PlannerTests#simpleSetQuery_ExternalDqj() */
 	@Test
 	public void simpleSetQuery_ExternalDqj() {
 		CompanyA c1 = bA.company("c1").create();
@@ -77,7 +76,7 @@ public class CollectionSelection_KeyProperty_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_KeyProperty_PlannerTests#EXPECTED_TO_FAIL_queryWithDelegatableSetCondition() */
+	/** See CollectionSelection_KeyProperty_PlannerTests#EXPECTED_TO_FAIL_queryWithDelegatableSetCondition() */
 	@Test
 	@Category(KnownIssue.class)
 	public void EXPECTED_TO_FAIL_queryWithDelegatableSetCondition() {
@@ -102,7 +101,7 @@ public class CollectionSelection_KeyProperty_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_KeyProperty_PlannerTests#queryWithDelegatableSetCondition_ExternalDqj() */
+	/** See CollectionSelection_KeyProperty_PlannerTests#queryWithDelegatableSetCondition_ExternalDqj() */
 	@Test
 	public void queryWithDelegatableSetCondition_ExternalDqj() {
 		CompanyA c1 = bA.company("c1").create();
@@ -126,7 +125,7 @@ public class CollectionSelection_KeyProperty_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_KeyProperty_PlannerTests#EXPECTED_TO_FAIL_setQueryWithDelegatableSetCondition() */
+	/** See CollectionSelection_KeyProperty_PlannerTests#EXPECTED_TO_FAIL_setQueryWithDelegatableSetCondition() */
 	@Test
 	@Category(KnownIssue.class)
 	public void EXPECTED_TO_FAIL_setQueryWithDelegatableSetCondition() {
@@ -156,7 +155,7 @@ public class CollectionSelection_KeyProperty_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_KeyProperty_PlannerTests#setQueryWithDelegatableSetCondition_ExternalDqj() */
+	/** See CollectionSelection_KeyProperty_PlannerTests#setQueryWithDelegatableSetCondition_ExternalDqj() */
 	@Test
 	public void setQueryWithDelegatableSetCondition_ExternalDqj() {
 		CompanyA c1 = bA.company("c1").create();
@@ -185,7 +184,7 @@ public class CollectionSelection_KeyProperty_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_KeyProperty_PlannerTests#EXPECTED_TO_FAIL_simpleListQuery() */
+	/** See CollectionSelection_KeyProperty_PlannerTests#EXPECTED_TO_FAIL_simpleListQuery() */
 	@Test
 	@Category(KnownIssue.class)
 	public void EXPECTED_TO_FAIL_simpleListQuery() {
@@ -216,7 +215,7 @@ public class CollectionSelection_KeyProperty_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_KeyProperty_PlannerTests#simpleListQuery_ExternalDqj() */
+	/** See CollectionSelection_KeyProperty_PlannerTests#simpleListQuery_ExternalDqj() */
 	@Test
 	public void simpleListQuery_ExternalDqj() {
 		CompanyA c1 = bA.company("c1").create();
@@ -246,7 +245,7 @@ public class CollectionSelection_KeyProperty_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_KeyProperty_PlannerTests#EXPECTED_TO_FAIL_listQueryWithListIndex() */
+	/** See CollectionSelection_KeyProperty_PlannerTests#EXPECTED_TO_FAIL_listQueryWithListIndex() */
 	@Test
 	@Category(KnownIssue.class)
 	public void EXPECTED_TO_FAIL_listQueryWithListIndex() {
@@ -279,7 +278,7 @@ public class CollectionSelection_KeyProperty_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_KeyProperty_PlannerTests#listQueryWithListIndex_ExternalDqj() */
+	/** See CollectionSelection_KeyProperty_PlannerTests#listQueryWithListIndex_ExternalDqj() */
 	@Test
 	public void listQueryWithListIndex_ExternalDqj() {
 		CompanyA c1 = bA.company("c1").create();
@@ -310,7 +309,7 @@ public class CollectionSelection_KeyProperty_Tests extends AbstractSmartQueryTes
 		assertResultContains(0, sc3);
 		assertNoMoreResults();
 	}
-	/** @see CollectionSelection_KeyProperty_PlannerTests#EXPECTED_TO_FAIL_simpleMapQuery() */
+	/** See CollectionSelection_KeyProperty_PlannerTests#EXPECTED_TO_FAIL_simpleMapQuery() */
 	@Test
 	@Category(KnownIssue.class)
 	public void EXPECTED_TO_FAIL_simpleMapQuery() {
@@ -342,7 +341,7 @@ public class CollectionSelection_KeyProperty_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_KeyProperty_PlannerTests#simpleMapQuery_ExternalDqj() */
+	/** See CollectionSelection_KeyProperty_PlannerTests#simpleMapQuery_ExternalDqj() */
 	@Test
 	public void simpleMapQuery_ExternalDqj() {
 		CompanyA c1 = bA.company("c1").create();

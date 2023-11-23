@@ -17,11 +17,10 @@ import com.braintribe.model.processing.query.smart.test.model.accessA.PersonA;
 import com.braintribe.model.processing.query.smart.test.model.accessB.ItemB;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartItem;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
-import com.braintribe.model.processing.smart.query.planner.EntitySelection_LinkProperty_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
- * @see EntitySelection_LinkProperty_PlannerTests
+ * See EntitySelection_LinkProperty_PlannerTests
  */
 public class EntitySelection_LinkProperty_Tests extends AbstractSmartQueryTests {
 
@@ -29,7 +28,7 @@ public class EntitySelection_LinkProperty_Tests extends AbstractSmartQueryTests 
 	private PersonA p1, p2, p3;
 	private SmartItem si1, si2, si3;
 
-	/** @see EntitySelection_LinkProperty_PlannerTests#simpleEntityQuery() */
+	/** See EntitySelection_LinkProperty_PlannerTests#simpleEntityQuery() */
 	@Test
 	public void simpleEntityQuery() {
 		prepareData();
@@ -50,7 +49,7 @@ public class EntitySelection_LinkProperty_Tests extends AbstractSmartQueryTests 
 		assertNoMoreResults();
 	}
 
-	/** @see EntitySelection_LinkProperty_PlannerTests#queryWithDelegatableEntityCondition() */
+	/** See EntitySelection_LinkProperty_PlannerTests#queryWithDelegatableEntityCondition() */
 	@Test
 	public void queryWithDelegatableEntityCondition() {
 		prepareData();

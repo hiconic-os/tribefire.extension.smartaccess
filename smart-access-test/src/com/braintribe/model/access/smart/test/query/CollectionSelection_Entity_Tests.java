@@ -21,16 +21,15 @@ import com.braintribe.model.processing.query.smart.test.model.accessA.PersonA;
 import com.braintribe.model.processing.query.smart.test.model.smart.Company;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
 import com.braintribe.model.processing.session.impl.persistence.BasicPersistenceGmSession;
-import com.braintribe.model.processing.smart.query.planner.CollectionSelection_Entity_PlannerTests;
 import com.braintribe.model.query.JoinType;
 import com.braintribe.model.query.SelectQuery;
 
 /**
- * @see CollectionSelection_Entity_PlannerTests
+ * See CollectionSelection_Entity_PlannerTests
  */
 public class CollectionSelection_Entity_Tests extends AbstractSmartQueryTests {
 
-	/** @see CollectionSelection_Entity_PlannerTests#simpleSetQuery() */
+	/** See CollectionSelection_Entity_PlannerTests#simpleSetQuery() */
 	@Test
 	public void simpleEmptySetQuery() {
 		bA.personA("john").create();
@@ -48,7 +47,7 @@ public class CollectionSelection_Entity_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_Entity_PlannerTests#simpleSetQuery() */
+	/** See CollectionSelection_Entity_PlannerTests#simpleSetQuery() */
 	@Test
 	public void innerJoinEmptySetQuery() {
 		bA.personA("john").create();
@@ -66,7 +65,7 @@ public class CollectionSelection_Entity_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_Entity_PlannerTests#simpleSetQuery() */
+	/** See CollectionSelection_Entity_PlannerTests#simpleSetQuery() */
 	@Test
 	public void simpleSetQuery() {
 		CompanyA c1 = bA.company("c1").create();
@@ -95,7 +94,7 @@ public class CollectionSelection_Entity_Tests extends AbstractSmartQueryTests {
 		
 	}
 
-	/** @see CollectionSelection_Entity_PlannerTests#queryWithDelegatableSetCondition() */
+	/** See CollectionSelection_Entity_PlannerTests#queryWithDelegatableSetCondition() */
 	@Test
 	public void queryWithDelegatableSetCondition() {
 		CompanyA c1 = bA.company("c1").create();
@@ -119,7 +118,7 @@ public class CollectionSelection_Entity_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_Entity_PlannerTests#setQueryWithDelegatableSetCondition() */
+	/** See CollectionSelection_Entity_PlannerTests#setQueryWithDelegatableSetCondition() */
 	@Test
 	public void setQueryWithDelegatableSetCondition() {
 		CompanyA c1 = bA.company("c1").create();
@@ -148,7 +147,7 @@ public class CollectionSelection_Entity_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_Entity_PlannerTests#simpleMapQuery() */
+	/** See CollectionSelection_Entity_PlannerTests#simpleMapQuery() */
 	@Test
 	public void simpleMapQuery() {
 		CompanyA c1 = bA.company("c1").create();
@@ -179,7 +178,7 @@ public class CollectionSelection_Entity_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_Entity_PlannerTests#simpleValueMapWithPolymorphicKeyQuery() */
+	/** See CollectionSelection_Entity_PlannerTests#simpleValueMapWithPolymorphicKeyQuery() */
 	@Test
 	public void simpleValueMapWithPolymorphicKeyQuery() {
 		CarA c1 = bA.carA("car-1").create();

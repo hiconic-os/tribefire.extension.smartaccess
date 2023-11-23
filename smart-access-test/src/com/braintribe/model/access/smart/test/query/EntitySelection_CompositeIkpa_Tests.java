@@ -16,15 +16,14 @@ import org.junit.Test;
 import com.braintribe.model.processing.query.smart.test.model.accessA.CompositeIkpaEntityA;
 import com.braintribe.model.processing.query.smart.test.model.accessA.PersonA;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
-import com.braintribe.model.processing.smart.query.planner.EntitySelection_CompositeIkpa_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
- * @see EntitySelection_CompositeIkpa_PlannerTests
+ * See EntitySelection_CompositeIkpa_PlannerTests
  */
 public class EntitySelection_CompositeIkpa_Tests extends AbstractSmartQueryTests {
 
-	/** @see EntitySelection_CompositeIkpa_PlannerTests#selectCompositeIkpaEntity() */
+	/** See EntitySelection_CompositeIkpa_PlannerTests#selectCompositeIkpaEntity() */
 	@Test
 	public void selectCompositeIkpaEntity() {
 		PersonA p1 = bA.personA("p1").create();
@@ -51,7 +50,7 @@ public class EntitySelection_CompositeIkpa_Tests extends AbstractSmartQueryTests
 		assertNoMoreResults();
 	}
 
-	/** @see EntitySelection_CompositeIkpa_PlannerTests#conditionOnCompositeIkpaEntity_ExternalDqj() */
+	/** See EntitySelection_CompositeIkpa_PlannerTests#conditionOnCompositeIkpaEntity_ExternalDqj() */
 	@Test
 	public void conditionOnCompositeIkpaEntity() {
 		PersonA p1 = bA.personA("p1").create();

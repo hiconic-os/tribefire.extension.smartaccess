@@ -17,7 +17,6 @@ import com.braintribe.model.processing.query.smart.test.model.accessA.discrimina
 import com.braintribe.model.processing.query.smart.test.model.smart.discriminator.SmartDiscriminatorBase;
 import com.braintribe.model.processing.query.smart.test.model.smart.discriminator.SmartDiscriminatorType1;
 import com.braintribe.model.processing.query.smart.test.model.smart.discriminator.SmartDiscriminatorType2;
-import com.braintribe.model.processing.smart.query.planner.DiscriminatorEntity_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
@@ -27,7 +26,7 @@ public class DiscriminatorEntity_Tests extends AbstractSmartQueryTests {
 
 	private static final String DISC_OTHER = "other";
 
-	/** @see DiscriminatorEntity_PlannerTests#selectPropert_HierarchyBase() */
+	/** See DiscriminatorEntity_PlannerTests#selectPropert_HierarchyBase() */
 	@Test
 	public void selectPropert_HierarchyBase() {
 		bA.discriminatorEntityA("t1", SmartDiscriminatorType1.DISC_TYPE1).create();
@@ -49,7 +48,7 @@ public class DiscriminatorEntity_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see DiscriminatorEntity_PlannerTests#selectPropert_HierarchyLeaf() */
+	/** See DiscriminatorEntity_PlannerTests#selectPropert_HierarchyLeaf() */
 	@Test
 	public void selectPropert_HierarchyLeaf() {
 		bA.discriminatorEntityA("t1", SmartDiscriminatorType1.DISC_TYPE1).type1Name("t1Name").create();
@@ -68,7 +67,7 @@ public class DiscriminatorEntity_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see DiscriminatorEntity_PlannerTests#selectTheDiscriminatorProperty() */
+	/** See DiscriminatorEntity_PlannerTests#selectTheDiscriminatorProperty() */
 	@Test
 	public void selectTheDiscriminatorProperty() {
 		bA.discriminatorEntityA("t1", SmartDiscriminatorType1.DISC_TYPE1).type1Name("t1Name").create();
@@ -87,7 +86,7 @@ public class DiscriminatorEntity_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see DiscriminatorEntity_PlannerTests#selectEntity_HierarchyLeaf() */
+	/** See DiscriminatorEntity_PlannerTests#selectEntity_HierarchyLeaf() */
 	@Test
 	public void selectEntity_HierarchyLeaf() {
 		DiscriminatorEntityA e;
@@ -107,7 +106,7 @@ public class DiscriminatorEntity_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see DiscriminatorEntity_PlannerTests#selectEntity_HierarchyBase() */
+	/** See DiscriminatorEntity_PlannerTests#selectEntity_HierarchyBase() */
 	@Test
 	public void selectEntity_HierarchyBase() {
 		DiscriminatorEntityA e1 = bA.discriminatorEntityA("t1", SmartDiscriminatorType1.DISC_TYPE1).type1Name("t1Name").create();
@@ -127,7 +126,7 @@ public class DiscriminatorEntity_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see DiscriminatorEntity_PlannerTests#selectTypeSignature() */
+	/** See DiscriminatorEntity_PlannerTests#selectTypeSignature() */
 	@Test
 	public void selectTypeSignature() {
 		bA.discriminatorEntityA("t1", SmartDiscriminatorType1.DISC_TYPE1).create();
@@ -147,7 +146,7 @@ public class DiscriminatorEntity_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see DiscriminatorEntity_PlannerTests#selectEntity_ConditionOnType() */
+	/** See DiscriminatorEntity_PlannerTests#selectEntity_ConditionOnType() */
 	@Test
 	public void selectEntity_ConditionOnType() {
 		// @formatter:off

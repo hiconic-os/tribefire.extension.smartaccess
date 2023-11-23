@@ -14,8 +14,6 @@ package com.braintribe.model.processing.query.smart.eval.context.conversion;
 import static com.braintribe.model.processing.smartquery.eval.api.ConversionDirection.delegate2Smart;
 import static com.braintribe.model.processing.smartquery.eval.api.ConversionDirection.smart2Delegate;
 
-import java.util.UUID;
-
 import org.junit.Test;
 
 import com.braintribe.gm.model.reason.Maybe;

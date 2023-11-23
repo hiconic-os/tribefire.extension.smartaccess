@@ -18,7 +18,6 @@ import com.braintribe.model.processing.query.smart.test.model.accessA.CompanyA;
 import com.braintribe.model.processing.query.smart.test.model.accessA.PersonA;
 import com.braintribe.model.processing.query.smart.test.model.accessB.PersonB;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
-import com.braintribe.model.processing.smart.query.planner.SimpleJoin_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 import com.braintribe.testing.category.KnownIssue;
 
@@ -27,7 +26,7 @@ import com.braintribe.testing.category.KnownIssue;
  */
 public class SimpleJoin_Tests extends AbstractSmartQueryTests {
 
-	/** @see SimpleJoin_PlannerTests#simpleJoinSelectPrimitiveProps() */
+	/** See SimpleJoin_PlannerTests#simpleJoinSelectPrimitiveProps() */
 	@Test
 	public void simpleJoinSelectPrimitiveProps() {
 		bA.personA("p1").companyA(bA.company("c1").create()).create();
@@ -51,7 +50,7 @@ public class SimpleJoin_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see SimpleJoin_PlannerTests#simpleJoinSelectEntities() */
+	/** See SimpleJoin_PlannerTests#simpleJoinSelectEntities() */
 	@Test
 	public void simpleJoinSelectEntities() {
 		CompanyA c1 = bA.company("c1").create();
@@ -79,7 +78,7 @@ public class SimpleJoin_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see SimpleJoin_PlannerTests#simpleKeyPropertyJoinSelectPrimitiveProps() */
+	/** See SimpleJoin_PlannerTests#simpleKeyPropertyJoinSelectPrimitiveProps() */
 	@Test
 	public void simpleKeyPropertyJoinSelectPrimitiveProps() {
 		bB.personB("pB1").create();
@@ -104,7 +103,7 @@ public class SimpleJoin_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see SimpleJoin_PlannerTests#simpleKeyPropertyJoinSelectEntities() */
+	/** See SimpleJoin_PlannerTests#simpleKeyPropertyJoinSelectEntities() */
 	@Test
 	public void simpleKeyPropertyJoinSelectEntities() {
 		PersonB pb1 = bB.personB("pB1").create();
@@ -129,7 +128,7 @@ public class SimpleJoin_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see SimpleJoin_PlannerTests#simpleJoinWithConditionOnJoined_SameAccess() */
+	/** See SimpleJoin_PlannerTests#simpleJoinWithConditionOnJoined_SameAccess() */
 	@Test
 	public void simpleJoinWithConditionOnJoined_SameAccess() {
 		CompanyA c1 = bA.company("c1").create();
@@ -158,7 +157,7 @@ public class SimpleJoin_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see SimpleJoin_PlannerTests#simpleJoinWithConditionOnJoind_DifferentAccess() */
+	/** See SimpleJoin_PlannerTests#simpleJoinWithConditionOnJoind_DifferentAccess() */
 	@Test
 	public void simpleJoinWithConditionOnJoind_DifferentAccess() {
 		PersonB pb;
@@ -186,7 +185,7 @@ public class SimpleJoin_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see SimpleJoin_PlannerTests#EXPECTED_TO_FAIL_simpleJoinWithConditionOnJoind_DifferentAccess_IsNull() */
+	/** See SimpleJoin_PlannerTests#EXPECTED_TO_FAIL_simpleJoinWithConditionOnJoind_DifferentAccess_IsNull() */
 	@Test
 	@Category(KnownIssue.class)
 	public void EXPECTED_TO_FAIL_simpleJoinWithConditionOnJoind_DifferentAccess_IsNull() {
@@ -210,7 +209,7 @@ public class SimpleJoin_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see SimpleJoin_PlannerTests#simpleJoinWithConditionOnJoind_DifferentAccess_IsNotNull() */
+	/** See SimpleJoin_PlannerTests#simpleJoinWithConditionOnJoind_DifferentAccess_IsNotNull() */
 	@Test
 	public void simpleJoinWithConditionOnJoind_DifferentAccess_IsNotNull() {
 		bB.personB("pB1").create();

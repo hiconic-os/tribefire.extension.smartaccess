@@ -18,7 +18,6 @@ import com.braintribe.model.processing.query.smart.test.model.accessB.ItemTypeB;
 import com.braintribe.model.processing.query.smart.test.model.smart.ItemType;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartItem;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
-import com.braintribe.model.processing.smart.query.planner.SingleSource_PrimitiveSelection_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
@@ -26,7 +25,7 @@ import com.braintribe.model.query.SelectQuery;
  */
 public class SingleSource_PrimitiveSelection_Tests extends AbstractSmartQueryTests {
 
-	/** @see SingleSource_PrimitiveSelection_PlannerTests#simpleQuery() */
+	/** See SingleSource_PrimitiveSelection_PlannerTests#simpleQuery() */
 	@Test
 	public void simpleQuery() {
 		bA.personA("p1").create();
@@ -46,7 +45,7 @@ public class SingleSource_PrimitiveSelection_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see SingleSource_PrimitiveSelection_PlannerTests#simpleQuery_Enum() */
+	/** See SingleSource_PrimitiveSelection_PlannerTests#simpleQuery_Enum() */
 	@Test
 	public void simpleQuery_Enum() {
 		bB.item("i1").type(ItemTypeB.ELECTRONICS_B).create();
@@ -87,7 +86,7 @@ public class SingleSource_PrimitiveSelection_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see SingleSource_PrimitiveSelection_PlannerTests#simpleQuery_Enum() */
+	/** See SingleSource_PrimitiveSelection_PlannerTests#simpleQuery_Enum() */
 	@Test
 	public void simpleQuery_EntityWithEnum() {
 		ItemB i1 = bB.item("i1").type(ItemTypeB.ELECTRONICS_B).create();
@@ -107,7 +106,7 @@ public class SingleSource_PrimitiveSelection_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see SingleSource_PrimitiveSelection_PlannerTests#simpleDqjQuery() */
+	/** See SingleSource_PrimitiveSelection_PlannerTests#simpleDqjQuery() */
 	@Test
 	public void simpleDqjQuery() {
 		bA.personA("pa1").parentB("pb1").create();
@@ -131,7 +130,7 @@ public class SingleSource_PrimitiveSelection_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see SingleSource_PrimitiveSelection_PlannerTests#simpleQueryWithCondition() */
+	/** See SingleSource_PrimitiveSelection_PlannerTests#simpleQueryWithCondition() */
 	@Test
 	public void simpleQueryWithCondition() {
 		bA.personA("nameA1").create();
@@ -152,7 +151,7 @@ public class SingleSource_PrimitiveSelection_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see SingleSource_PrimitiveSelection_PlannerTests#simpleQueryWithConditionNonSelectedProps() */
+	/** See SingleSource_PrimitiveSelection_PlannerTests#simpleQueryWithConditionNonSelectedProps() */
 	@Test
 	public void simpleQueryWithConditionNonSelectedProps() {
 		bA.personA("nameA1").companyNameA("companyNameA1").create();
@@ -173,7 +172,7 @@ public class SingleSource_PrimitiveSelection_Tests extends AbstractSmartQueryTes
 		assertNoMoreResults();
 	}
 
-	/** @see SingleSource_PrimitiveSelection_PlannerTests#selectUnmappedProperty_Simple() */
+	/** See SingleSource_PrimitiveSelection_PlannerTests#selectUnmappedProperty_Simple() */
 	@Test
 	public void selectUnmappedProperty() {
 		bA.personA("p1").create();

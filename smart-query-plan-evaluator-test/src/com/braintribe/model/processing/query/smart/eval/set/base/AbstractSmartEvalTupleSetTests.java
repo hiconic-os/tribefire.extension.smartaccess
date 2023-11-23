@@ -30,7 +30,6 @@ import com.braintribe.model.generic.value.EntityReference;
 import com.braintribe.model.processing.query.eval.api.EvalTupleSet;
 import com.braintribe.model.processing.query.eval.api.QueryEvaluationContext;
 import com.braintribe.model.processing.query.eval.api.Tuple;
-import com.braintribe.model.processing.query.eval.set.base.AbstractEvalTupleSetTests;
 import com.braintribe.model.processing.query.eval.tools.QueryEvaluationTools;
 import com.braintribe.model.processing.query.eval.tuple.ArrayBasedTuple;
 import com.braintribe.model.processing.query.fluent.SelectQueryBuilder;
@@ -49,9 +48,6 @@ import com.braintribe.model.smartqueryplan.SmartQueryPlan;
 import com.braintribe.utils.junit.assertions.BtAssertions;
 import com.braintribe.utils.lcd.MapTools;
 
-/**
- * TODO extract common super-type of this and {@link AbstractEvalTupleSetTests}
- */
 public abstract class AbstractSmartEvalTupleSetTests {
 
 	protected SmartMappingSetup setup;

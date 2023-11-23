@@ -18,11 +18,10 @@ import com.braintribe.model.processing.query.smart.test.model.accessA.PersonA;
 import com.braintribe.model.processing.query.smart.test.model.smart.Car;
 import com.braintribe.model.processing.query.smart.test.model.smart.FlyingCar;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
-import com.braintribe.model.processing.smart.query.planner.QueryFunctions_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
- * @see QueryFunctions_PlannerTests
+ * See QueryFunctions_PlannerTests
  */
 public class QueryFunctions_Tests extends AbstractSmartQueryTests {
 
@@ -30,7 +29,7 @@ public class QueryFunctions_Tests extends AbstractSmartQueryTests {
 	// ## . . . . . EntitySignature . . . . . ##
 	// #########################################
 
-	/** @see QueryFunctions_PlannerTests#signature_Final() */
+	/** See QueryFunctions_PlannerTests#signature_Final() */
 	@Test
 	public void signature_Final() {
 		bA.personA("p1").create();
@@ -48,7 +47,7 @@ public class QueryFunctions_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see QueryFunctions_PlannerTests#signature_Hierarchy() */
+	/** See QueryFunctions_PlannerTests#signature_Hierarchy() */
 	@Test
 	public void signature_Hierarchy() {
 		bA.carA("simple-car").create();
@@ -68,7 +67,7 @@ public class QueryFunctions_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see QueryFunctions_PlannerTests#conditionOnSourceType() */
+	/** See QueryFunctions_PlannerTests#conditionOnSourceType() */
 	@Test
 	public void conditionOnSourceType() {
 		CarA c;
@@ -111,7 +110,7 @@ public class QueryFunctions_Tests extends AbstractSmartQueryTests {
 	// assertResultContains(smartItem(i2), "bom");
 	// }
 
-	/** @see QueryFunctions_PlannerTests#propertyAsString() */
+	/** See QueryFunctions_PlannerTests#propertyAsString() */
 	@Test
 	public void propertyAsString() {
 		PersonA p = bA.personA("p1").create();

@@ -20,7 +20,6 @@ import com.braintribe.model.processing.query.smart.test.model.smart.constant.Sma
 import com.braintribe.model.processing.query.smart.test.model.smart.constant.SmartConstantPropEntityA;
 import com.braintribe.model.processing.query.smart.test.model.smart.constant.SmartConstantPropEntityA2;
 import com.braintribe.model.processing.query.smart.test.model.smart.constant.SmartConstantPropEntitySubA;
-import com.braintribe.model.processing.smart.query.planner.ConstantProperty_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 import com.braintribe.utils.junit.assertions.BtAssertions;
 
@@ -29,7 +28,7 @@ import com.braintribe.utils.junit.assertions.BtAssertions;
  */
 public class ConstantProperty_Tests extends AbstractSmartQueryTests {
 
-	/** @see ConstantProperty_PlannerTests#selectTheConstant() */
+	/** See ConstantProperty_PlannerTests#selectTheConstant() */
 	@Test
 	public void selectTheConstant() {
 		ConstantPropEntitySubA cpe = bA.constantPropEntitySubA("constantine").create();
@@ -48,7 +47,7 @@ public class ConstantProperty_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see ConstantProperty_PlannerTests#selectConstantPropertyEntity() */
+	/** See ConstantProperty_PlannerTests#selectConstantPropertyEntity() */
 	@Test
 	public void selectConstantPropertyEntity() {
 		ConstantPropEntitySubA cpe = bA.constantPropEntitySubA("constantine").create();
@@ -72,7 +71,7 @@ public class ConstantProperty_Tests extends AbstractSmartQueryTests {
 		BtAssertions.assertThat(scpe.getConstantValue()).isEqualTo(SmartConstantPropEntitySubA.CONSTANT_VALUE_SUB);
 	}
 
-	/** @see ConstantProperty_PlannerTests#conditionOnTheConstant_WhenTrue() */
+	/** See ConstantProperty_PlannerTests#conditionOnTheConstant_WhenTrue() */
 	@Test
 	public void conditionOnTheConstant_WhenTrue() {
 		ConstantPropEntitySubA cpe = bA.constantPropEntitySubA("constantine").create();
@@ -92,7 +91,7 @@ public class ConstantProperty_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see ConstantProperty_PlannerTests#conditionOnTheConstant_WhenFalse() */
+	/** See ConstantProperty_PlannerTests#conditionOnTheConstant_WhenFalse() */
 	@Test
 	public void conditionOnTheConstant_WhenFalse() {
 		bA.constantPropEntitySubA("constantine").create();
@@ -111,7 +110,7 @@ public class ConstantProperty_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see ConstantProperty_PlannerTests#selectTheConstant_Polymorphic() */
+	/** See ConstantProperty_PlannerTests#selectTheConstant_Polymorphic() */
 	@Test
 	public void selectTheConstant_Polymorphic() {
 		ConstantPropEntityA cpe = bA.constantPropEntityA("constantine").create();
@@ -132,7 +131,7 @@ public class ConstantProperty_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see ConstantProperty_PlannerTests#conditionOnTheConstant_Polymorphic_WhenPartiallyTrue() */
+	/** See ConstantProperty_PlannerTests#conditionOnTheConstant_Polymorphic_WhenPartiallyTrue() */
 	@Test
 	public void conditionOnTheConstant_Polymorphic_WhenPartiallyTrue() {
 		ConstantPropEntityA cpe;
@@ -154,7 +153,7 @@ public class ConstantProperty_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see ConstantProperty_PlannerTests#conditionOnTheConstant_WithPagination() */
+	/** See ConstantProperty_PlannerTests#conditionOnTheConstant_WithPagination() */
 	@Test
 	public void conditionOnTheConstant_WithPagination() {
 		bA.constantPropEntityA("constantine").create();

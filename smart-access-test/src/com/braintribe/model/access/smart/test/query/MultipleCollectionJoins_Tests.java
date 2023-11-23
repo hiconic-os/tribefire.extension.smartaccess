@@ -15,7 +15,6 @@ import org.junit.Test;
 
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonB;
-import com.braintribe.model.processing.smart.query.planner.MultipleCollectionJoins_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
@@ -26,7 +25,7 @@ public class MultipleCollectionJoins_Tests extends AbstractSmartQueryTests {
 	/**
 	 * {@code select n1, n2 from SmartPersonA p join p.nickNamesSetA n1 join p.nickNamesSetA n2}
 	 * 
-	 * @see MultipleCollectionJoins_PlannerTests#doulbeExplicitSetJoin()
+	 * See MultipleCollectionJoins_PlannerTests#doulbeExplicitSetJoin()
 	 */
 	@Test
 	public void doulbeExplicitSetJoin() {
@@ -50,7 +49,7 @@ public class MultipleCollectionJoins_Tests extends AbstractSmartQueryTests {
 	/**
 	 * {@code select n1, p.nickNamesSetA from SmartPersonA p join p.nickNamesSetA n1}
 	 * 
-	 * @see MultipleCollectionJoins_PlannerTests#explicitAndImplicitSetJoin()
+	 * See MultipleCollectionJoins_PlannerTests#explicitAndImplicitSetJoin()
 	 */
 	@Test
 	public void explicitAndImplicitSetJoin() {
@@ -73,7 +72,7 @@ public class MultipleCollectionJoins_Tests extends AbstractSmartQueryTests {
 	/**
 	 * {@code select n1, p.nickNamesSetA from SmartPersonA p join p.nickNamesSetA n1 where 'Bob' in p.nickNamesSetA}
 	 * 
-	 * @see MultipleCollectionJoins_PlannerTests#explicitAndImplicitSetJoin_WithCondition()
+	 * See MultipleCollectionJoins_PlannerTests#explicitAndImplicitSetJoin_WithCondition()
 	 */
 	@Test
 	public void explicitAndImplicitSetJoin_WithCondition() {
@@ -107,7 +106,7 @@ public class MultipleCollectionJoins_Tests extends AbstractSmartQueryTests {
 	/**
 	 * {@code select n1, p.nickNamesSetA from SmartPersonA p join p.nickNamesSetA n1 where 'Bob' in p.nickNamesSetA and n1 = 'Robbie'}
 	 * 
-	 * @see MultipleCollectionJoins_PlannerTests#explicitAndImplicitSetJoin_WithExplicitAndImplicitCondition()
+	 * See MultipleCollectionJoins_PlannerTests#explicitAndImplicitSetJoin_WithExplicitAndImplicitCondition()
 	 */
 	@Test
 	public void explicitAndImplicitSetJoin_WithExplicitAndImplicitCondition() {
@@ -138,7 +137,7 @@ public class MultipleCollectionJoins_Tests extends AbstractSmartQueryTests {
 	/**
 	 * {@code select n1 from SmartPersonA p join p.nickNamesSetA n1, SmartPersonB pb where pb.nameB in p.nickNamesSetA}
 	 * 
-	 * @see MultipleCollectionJoins_PlannerTests#explicitSetJoin_WithNonDelegatableCondition()
+	 * See MultipleCollectionJoins_PlannerTests#explicitSetJoin_WithNonDelegatableCondition()
 	 */
 	@Test
 	public void explicitSetJoin_WithNonDelegatableCondition() {
@@ -172,7 +171,7 @@ public class MultipleCollectionJoins_Tests extends AbstractSmartQueryTests {
 	/**
 	 * {@code select n1 from SmartPersonA p join p.nickNamesSetA n1, SmartPersonB pb where pb.nameB in p.nickNamesSetA and 'Bob' in p.nickNamesSetA }
 	 * 
-	 * @see MultipleCollectionJoins_PlannerTests#explicitSetJoin_WithNonDelegatable_AndAlsoDelegatable_Condition()
+	 * See MultipleCollectionJoins_PlannerTests#explicitSetJoin_WithNonDelegatable_AndAlsoDelegatable_Condition()
 	 */
 	@Test
 	public void explicitSetJoin_WithNonDelegatable_AndAlsoDelegatable_Condition() {
@@ -211,7 +210,7 @@ public class MultipleCollectionJoins_Tests extends AbstractSmartQueryTests {
 	/**
 	 * {@code select n1 from SmartPersonA p join p.nickNamesSetA n1, SmartPersonB pb where pb.ageB = index(n1)}
 	 * 
-	 * @see MultipleCollectionJoins_PlannerTests#explicitListJoin_WithDelegatable_ListIndexCondition()
+	 * See MultipleCollectionJoins_PlannerTests#explicitListJoin_WithDelegatable_ListIndexCondition()
 	 */
 	@Test
 	public void explicitListJoin_WithDelegatable_ListIndexCondition() {
@@ -240,7 +239,7 @@ public class MultipleCollectionJoins_Tests extends AbstractSmartQueryTests {
 	/**
 	 * {@code select n1 from SmartPersonA p join p.nickNamesSetA n1, SmartPersonB pb where pb.ageB = index(n1)}
 	 * 
-	 * @see MultipleCollectionJoins_PlannerTests#explicitListJoin_WithNonDelegatable_ListIndexCondition()
+	 * See MultipleCollectionJoins_PlannerTests#explicitListJoin_WithNonDelegatable_ListIndexCondition()
 	 */
 
 	@Test
@@ -275,7 +274,7 @@ public class MultipleCollectionJoins_Tests extends AbstractSmartQueryTests {
 	/**
 	 * {@code select n1 from SmartPersonA p join p.nickNamesSetA n1, SmartPersonB pb where pb.ageB = index(n1) and 'Bob' in pb.nickNamesListA }
 	 * 
-	 * @see MultipleCollectionJoins_PlannerTests#explicitListJoin_WithNonDelegatableListIndex_AndOtherDelegatable_Condition()
+	 * See MultipleCollectionJoins_PlannerTests#explicitListJoin_WithNonDelegatableListIndex_AndOtherDelegatable_Condition()
 	 */
 	@Test
 	public void explicitListJoin_WithNonDelegatableListIndex_AndOtherDelegatable_Condition() {

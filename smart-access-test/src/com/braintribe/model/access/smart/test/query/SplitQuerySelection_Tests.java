@@ -32,16 +32,15 @@ import com.braintribe.model.processing.query.smart.test.model.smart.special.Smar
 import com.braintribe.model.processing.query.smart.test.model.smart.special.SmartManualA;
 import com.braintribe.model.processing.query.smart.test.model.smart.special.SmartPublication;
 import com.braintribe.model.processing.query.smart.test.model.smart.special.SmartReaderA;
-import com.braintribe.model.processing.smart.query.planner.SplitQuerySelection_PlannerTests;
 import com.braintribe.model.query.OrderingDirection;
 import com.braintribe.model.query.SelectQuery;
 
 /**
- * @see SplitQuerySelection_PlannerTests
+ * See SplitQuerySelection_PlannerTests
  */
 public class SplitQuerySelection_Tests extends AbstractSmartQueryTests {
 
-	/** @see SplitQuerySelection_PlannerTests#simpleEntitySelect() */
+	/** See SplitQuerySelection_PlannerTests#simpleEntitySelect() */
 	@Test
 	public void simpleEntitySelect() {
 		BookA ba1 = bA.bookA("ba1").create();
@@ -101,7 +100,7 @@ public class SplitQuerySelection_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see SplitQuerySelection_PlannerTests#selectPaginatedEntity() */
+	/** See SplitQuerySelection_PlannerTests#selectPaginatedEntity() */
 	@Test
 	public void selectPaginatedEntity() {
 		BookA ba1 = bA.bookA("ba1").create();
@@ -125,7 +124,7 @@ public class SplitQuerySelection_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see SplitQuerySelection_PlannerTests#selectSimplySortedEntity() */
+	/** See SplitQuerySelection_PlannerTests#selectSimplySortedEntity() */
 	@Test
 	public void selectSimplySortedEntity() {
 		BookA ba1 = bA.bookA("ba1").author("ccc").create();
@@ -148,7 +147,7 @@ public class SplitQuerySelection_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see SplitQuerySelection_PlannerTests#selectSimplySortedEntityProperty() */
+	/** See SplitQuerySelection_PlannerTests#selectSimplySortedEntityProperty() */
 	@Test
 	public void selectSimplySortedEntityProperty() {
 		bA.bookA("ba1").author("ccc").create();
@@ -171,7 +170,7 @@ public class SplitQuerySelection_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see SplitQuerySelection_PlannerTests#selectMultiSortedEntity() */
+	/** See SplitQuerySelection_PlannerTests#selectMultiSortedEntity() */
 	@Test
 	public void selectMultiSortedEntity() {
 		bA.bookA("ba1").author("bbb").isbn("1").create();
@@ -200,7 +199,7 @@ public class SplitQuerySelection_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see SplitQuerySelection_PlannerTests#selectCartesianProduct() */
+	/** See SplitQuerySelection_PlannerTests#selectCartesianProduct() */
 	@Test
 	public void selectCartesianProduct() {
 		BookA ba1 = bA.bookA("ba1").author("bbb").isbn("1").create();
@@ -323,7 +322,7 @@ public class SplitQuerySelection_Tests extends AbstractSmartQueryTests {
 		assertNoMoreResults();
 	}
 
-	/** @see SplitQuerySelection_PlannerTests#selectSplitPropertyWithEntityCondition() */
+	/** See SplitQuerySelection_PlannerTests#selectSplitPropertyWithEntityCondition() */
 	@Test
 	public void selectSplitPropertyWithEntityCondition() {
 		BookB b = bB.bookB("bb").create();

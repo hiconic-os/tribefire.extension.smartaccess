@@ -15,7 +15,6 @@ import org.junit.Test;
 
 import com.braintribe.model.processing.query.smart.test.model.accessB.ItemB;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
-import com.braintribe.model.processing.smart.query.planner.EntitySelection_Dqj_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
@@ -23,7 +22,7 @@ import com.braintribe.model.query.SelectQuery;
  */
 public class EntitySelection_Dqj_Tests extends AbstractSmartQueryTests {
 
-	/** @see EntitySelection_Dqj_PlannerTests#simpleInverseKeyPropertyJoin() */
+	/** See EntitySelection_Dqj_PlannerTests#simpleInverseKeyPropertyJoin() */
 	@Test
 	public void simpleInverseKeyPropertyJoin() {
 		bA.personA("pA1").create();

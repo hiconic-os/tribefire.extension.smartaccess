@@ -17,11 +17,10 @@ import com.braintribe.model.processing.query.smart.test.model.accessA.PersonA;
 import com.braintribe.model.processing.query.smart.test.model.accessB.ItemB;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartItem;
 import com.braintribe.model.processing.query.smart.test.model.smart.SmartPersonA;
-import com.braintribe.model.processing.smart.query.planner.CollectionSelection_LinkProperty_PlannerTests;
 import com.braintribe.model.query.SelectQuery;
 
 /**
- * @see CollectionSelection_LinkProperty_PlannerTests
+ * See CollectionSelection_LinkProperty_PlannerTests
  */
 public class CollectionSelection_LinkProperty_Tests extends AbstractSmartQueryTests {
 
@@ -29,7 +28,7 @@ public class CollectionSelection_LinkProperty_Tests extends AbstractSmartQueryTe
 	private PersonA p1, p2, p3;
 	private SmartItem si1, si2, si3;
 
-	/** @see CollectionSelection_LinkProperty_PlannerTests#simpleSetQuery() */
+	/** See CollectionSelection_LinkProperty_PlannerTests#simpleSetQuery() */
 	@Test
 	public void simpleSetQuery() {
 		prepareData();
@@ -52,7 +51,7 @@ public class CollectionSelection_LinkProperty_Tests extends AbstractSmartQueryTe
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_LinkProperty_PlannerTests#queryWithDelegatableSetCondition() */
+	/** See CollectionSelection_LinkProperty_PlannerTests#queryWithDelegatableSetCondition() */
 	@Test
 	public void queryWithDelegatableSetCondition() {
 		prepareData();
@@ -73,7 +72,7 @@ public class CollectionSelection_LinkProperty_Tests extends AbstractSmartQueryTe
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_LinkProperty_PlannerTests#setQueryWithDelegatableSetCondition() */
+	/** See CollectionSelection_LinkProperty_PlannerTests#setQueryWithDelegatableSetCondition() */
 	@Test
 	public void setQueryWithDelegatableSetCondition() {
 		prepareData();
@@ -98,7 +97,7 @@ public class CollectionSelection_LinkProperty_Tests extends AbstractSmartQueryTe
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_LinkProperty_PlannerTests#simpleListQuery() */
+	/** See CollectionSelection_LinkProperty_PlannerTests#simpleListQuery() */
 	@Test
 	public void simpleListQuery() {
 		prepareData();
@@ -121,7 +120,7 @@ public class CollectionSelection_LinkProperty_Tests extends AbstractSmartQueryTe
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_LinkProperty_PlannerTests#listQueryWithListIndex() */
+	/** See CollectionSelection_LinkProperty_PlannerTests#listQueryWithListIndex() */
 	@Test
 	public void listQueryWithListIndex() {
 		prepareData();
@@ -146,7 +145,7 @@ public class CollectionSelection_LinkProperty_Tests extends AbstractSmartQueryTe
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_LinkProperty_PlannerTests#listQueryWithListIndexCondition() */
+	/** See CollectionSelection_LinkProperty_PlannerTests#listQueryWithListIndexCondition() */
 	@Test
 	public void listQueryWithListIndexCondition() {
 		prepareData();
@@ -170,7 +169,7 @@ public class CollectionSelection_LinkProperty_Tests extends AbstractSmartQueryTe
 		assertNoMoreResults();
 	}
 
-	/** @see CollectionSelection_LinkProperty_PlannerTests#listQueryWithListIndexCondition_NonDelegateable() */
+	/** See CollectionSelection_LinkProperty_PlannerTests#listQueryWithListIndexCondition_NonDelegateable() */
 	@Test
 	public void listQueryWithListIndexCondition_NonDelegateable() {
 		prepareData();
