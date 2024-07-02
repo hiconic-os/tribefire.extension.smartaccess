@@ -103,7 +103,7 @@ public class BasicSmartMappingEditorBuilder implements SmartMappingEditorBuilder
 	}
 
 	/* package */ ModelMetaDataEditor smartModelMdEditor() {
-		return BasicModelMetaDataEditor.create(smartModel).withEtityFactory(entityFactory).done();
+		return BasicModelMetaDataEditor.create(smartModel).withEntityFactory(entityFactory).done();
 	}
 
 	/* package */ Function<EntityType<?>, GenericEntity> entityFactory() {
